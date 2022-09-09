@@ -162,8 +162,8 @@ pre {
   left: 50%;
   width: 60px;
   height: 60px;
-  -webkit-animation: rotate 6.9s linear infinite;
-          animation: rotate 6.9s linear infinite;
+  -webkit-animation: rotate 2.9s linear infinite;
+          animation: rotate 2.9s linear infinite;
 }
 .infinity div span {
   left: -8px;
@@ -179,8 +179,8 @@ pre {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-animation: move 6.9s linear infinite;
-          animation: move 6.9s linear infinite;
+  -webkit-animation: move 2.9s linear infinite;
+          animation: move 2.9s linear infinite;
 }
 .infinity div span:before, .infinity div span:after {
   content: "";
@@ -233,8 +233,8 @@ pre {
   -webkit-box-shadow: 2px 2px 8px rgba(255, 76, 96, 0.09);
           box-shadow: 2px 2px 8px rgba(255, 76, 96, 0.09);
   border-radius: 50%;
-  -webkit-animation: moveSvg 6.9s linear infinite;
-          animation: moveSvg 6.9s linear infinite;
+  -webkit-animation: moveSvg 2.9s linear infinite;
+          animation: moveSvg 2.9s linear infinite;
   -webkit-filter: url(#goo);
   filter: url(#goo);
   -webkit-transform: scaleX(-1);
