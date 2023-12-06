@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Pranjal Bajpai - Student | Developer | Coding is a beautiful Life !</title>
+    <title>Pranjal Bajpai - Developer | Coding is a beautiful Life !</title>
     <meta name="description" content="Pranjal Bajpai - Student | Developer I am a collage student and I am a also developer from the kanpur, I like create something new !!">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="https://github.com/pranjal2523/portfolio_website/images/favicon.png">
@@ -22,43 +22,6 @@
 
 <body class="dark">
 
-    <!-- Preloader 
-
-    <div id="preloader">
-        <div class="outer">
-
-             Google Chrome 
-            <div class="infinityChrome">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-         Safari and others 
-            <div class="infinity">
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-            </div>
-            Stuff 
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo-outer">
-			<defs>
-				<filter id="goo">
-					<feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
-					<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-					<feBlend in="SourceGraphic" in2="goo" />
-				</filter>
-			</defs>
-		</svg>
-        </div>
-    </div>
-end of prelloader -->
     <!-- desktop header -->
     <header class="desktop-header-3 fixed-top">
 
@@ -98,7 +61,7 @@ end of prelloader -->
 
                     <!-- info -->
                     <h1 class="mb-2 mt-0">Pranjal</h1>
-                    <span>I'm a <span class="text-rotating">CSE Graduate, Computer Lover, Machine learning Enthusiast</span></span>
+                    <span><span class="text-rotating">I'm a Python Developer, At Sort String Solutions LLP</span></span>
 
                     <!-- social icons -->
                     <ul class="social-icons light list-inline mb-0 mt-4">
@@ -164,14 +127,14 @@ end of prelloader -->
         <!-- section about -->
         <section id="about">
 
-            <div class="container">
+            <div class="container" >
 
                 <!-- section title -->
                 <h2 class="section-title wow fadeInUp">About Me</h2>
 
                 <div class="spacer" data-height="60"></div>
 
-                <div class="row">
+                <div class="row" style="display: flex; justify-content: center; align-items: center;">
 
                     <div class="col-md-3">
                         <div class="text-center text-md-left">
@@ -186,7 +149,7 @@ end of prelloader -->
                             <div class="row">
                                 <div class="col-md-6">
                                     <!-- about text -->
-                                    <p>I am Pranjal Bajpai, Student of B.Tech Final year.<br>I love Coding &#128151</p>
+                                    <p>I am Pranjal Bajpai, Python developer <br>I love Coding &#128151</p>
                                     <div class="mt-3">
                                         <a href="https://drive.google.com/file/d/1IN8jCxTbpc4uI8Y4JAbFH9cY3tU_f2Qn/view?usp=sharing" class="btn btn-default">Resume</a>
                                     </div>
@@ -262,6 +225,17 @@ end of prelloader -->
                             <div class="details">
                                 <h3 class="mb-0 mt-0 number"><em class="count">8</em></h3>
                                 <p class="mb-0">Certificates</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <!-- fact item -->
+                        <div class="fact-item">
+                            <span class="icon icon-badge"></span>
+                            <div class="details">
+                                <h3 class="mb-0 mt-0 number"><em id="exp"></em></h3>
+                                <p class="mb-0">Experience</p>
                             </div>
                         </div>
                     </div>
@@ -550,10 +524,42 @@ end of prelloader -->
         </footer>
 
     </main>
-<!--
-     Go to top button-->
+
     <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script> 
+        window.onload = function() {   
+            // Create Date objects for the given date and current date
+            const startDateObj = new Date("2023-07-01");
+            const currentDate = new Date();
+
+                            // Calculate the time difference in milliseconds
+            const timeDifference = currentDate - startDateObj;
+
+            // Calculate years, months, and days
+            const years = Math.floor(timeDifference / (365.25 * 24 * 60 * 60 * 1000));
+            const months = Math.floor((timeDifference % (365.25 * 24 * 60 * 60 * 1000)) / (30.44 * 24 * 60 * 60 * 1000));
+            const days = Math.floor((timeDifference % (30.44 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
+
+            // Create the result string
+            let result = '';
+            if (years > 0) {
+                result += years + (years === 1 ? ' year' : ' years');
+            }
+            if (months > 0) {
+                result += (result.length > 0 ? ', ' : '') + months + (months === 1 ? ' month' : ' months');
+            }
+           
+            // const resultString = `${days} days, ${months} months, ${years} years`;
+            // Return the calculated values
+            // document.querySelector('.exp').innerHTML(resultString);
+            // console.log(resultString);
+            const myElement = document.getElementById('exp');
+
+            // Now you can manipulate the selected element
+            myElement.innerHTML = result;
+        }
+    </script>
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
